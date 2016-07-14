@@ -39,13 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 60;
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.0 green:0.502 blue:0.251 alpha:1.0];
 }
-
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:YES];
-//    [self.tableView reloadData];
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -97,16 +92,16 @@
 }
 
 
-
-
+#pragma mark -- Contact Picker Delegate
 
 - (IBAction)importButtonSelected:(UIBarButtonItem *)sender {
     CNContactPickerViewController *contactPicker = [CNContactPickerViewController new];
     contactPicker.delegate = self;
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0 green:0.502 blue:0.251 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.0 green:0.502 blue:0.251 alpha:1.0];
     [self presentViewController:contactPicker animated:YES completion:nil];
 }
-
-#pragma mark -- Contact Picker Delegate
 
 - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContact:(CNContact *)contact
 {
