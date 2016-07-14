@@ -100,8 +100,8 @@
 {
     [aCoder encodeObject:self.firstName forKey:@"firstName"];
     [aCoder encodeObject:self.lastName forKey:@"lastName"];
-    [aCoder encodeObject:self.phone forKey:@"email"];
-    [aCoder encodeObject:self.email forKey:@"phone"];
+    [aCoder encodeObject:self.phone forKey:@"phone"];
+    [aCoder encodeObject:self.email forKey:@"email"];
 }
 
 @end

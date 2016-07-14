@@ -18,6 +18,9 @@
 		70B9D58A1D36C50300D7EB79 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B9D5891D36C50300D7EB79 /* AddViewController.m */; };
 		70B9D58F1D36CC1100D7EB79 /* Student+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B9D58E1D36CC1100D7EB79 /* Student+Extension.m */; };
 		70B9D5921D36DB7300D7EB79 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B9D5911D36DB7300D7EB79 /* NSString+Extension.m */; };
+		70B9D5961D37074E00D7EB79 /* ImportContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B9D5951D37074E00D7EB79 /* ImportContacts.m */; };
+		70B9D5981D3718EC00D7EB79 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B9D5971D3718EC00D7EB79 /* ContactsUI.framework */; };
+		70B9D59A1D3718F400D7EB79 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B9D5991D3718F400D7EB79 /* Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,10 @@
 		70B9D58E1D36CC1100D7EB79 /* Student+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+Extension.m"; sourceTree = "<group>"; };
 		70B9D5901D36DB7300D7EB79 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		70B9D5911D36DB7300D7EB79 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		70B9D5941D37074E00D7EB79 /* ImportContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportContacts.h; sourceTree = "<group>"; };
+		70B9D5951D37074E00D7EB79 /* ImportContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportContacts.m; sourceTree = "<group>"; };
+		70B9D5971D3718EC00D7EB79 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		70B9D5991D3718F400D7EB79 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B9D5981D3718EC00D7EB79 /* ContactsUI.framework in Frameworks */,
+				70B9D59A1D3718F400D7EB79 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +66,8 @@
 		70B9D5541D36B71B00D7EB79 = {
 			isa = PBXGroup;
 			children = (
+				70B9D5991D3718F400D7EB79 /* Contacts.framework */,
+				70B9D5971D3718EC00D7EB79 /* ContactsUI.framework */,
 				70B9D55F1D36B71B00D7EB79 /* ClassMates */,
 				70B9D55E1D36B71B00D7EB79 /* Products */,
 			);
@@ -73,6 +84,7 @@
 		70B9D55F1D36B71B00D7EB79 /* ClassMates */ = {
 			isa = PBXGroup;
 			children = (
+				70B9D5931D37072300D7EB79 /* Utilties */,
 				70B9D5781D36B75100D7EB79 /* Global */,
 				70B9D5791D36B75C00D7EB79 /* Controller */,
 				70B9D5771D36B74400D7EB79 /* View */,
@@ -152,6 +164,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		70B9D5931D37072300D7EB79 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				70B9D5941D37074E00D7EB79 /* ImportContacts.h */,
+				70B9D5951D37074E00D7EB79 /* ImportContacts.m */,
+			);
+			name = Utilties;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +199,9 @@
 		70B9D5551D36B71B00D7EB79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Jeremy Moore";
 				TargetAttributes = {
@@ -228,6 +252,7 @@
 				70B9D58A1D36C50300D7EB79 /* AddViewController.m in Sources */,
 				70B9D5621D36B71B00D7EB79 /* main.m in Sources */,
 				70B9D5811D36BBA200D7EB79 /* Store.m in Sources */,
+				70B9D5961D37074E00D7EB79 /* ImportContacts.m in Sources */,
 				70B9D57D1D36B7A100D7EB79 /* Student.m in Sources */,
 				70B9D5921D36DB7300D7EB79 /* NSString+Extension.m in Sources */,
 			);
